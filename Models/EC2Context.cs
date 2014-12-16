@@ -17,6 +17,12 @@ namespace EC2Dash.Models
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<EC2Context, Migrations.Configuration>());
+        }
+
         public DbSet<EC2Instance> EC2Instance { get; set; }
 
         public DbSet<Group> Groups { get; set; }
