@@ -18,6 +18,7 @@ namespace EC2Dash
         {
             AreaRegistration.RegisterAllAreas();
             System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<EC2Dash.Models.EC2Context>());
+
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
