@@ -1,0 +1,21 @@
+﻿<div id="groupAddDialog" class="modal show" tabindex="-1" role="dialog">
+    <div class="modal-header">
+        <a href="#" class="close" data-dismiss="modal">&times;</a>
+
+        <h3>Add to Group</h3>
+    </div>
+    <div class="modal-body">
+        <form name="form" class="form-horizontal" role="form">
+            <div style="width:500px">
+                <div class="form-group">
+                    <label class="control-label" for="Name">Name&nbsp;</label>
+                    <select ng-model="selectedGroup" ng-options="group.Name for group in groups" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn btn-primary" data-dismiss="modal" ng-click="addToGroup()" ng-disabled="!selectedGroup">Add</a>
+        <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="EC2Dash" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <style type='text/css'>
+        ul.nav li.dropdown:hover ul.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            margin-top: 0px;
+        }
+    </style>
+
+    <title>EC2 Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
